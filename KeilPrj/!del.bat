@@ -1,0 +1,17 @@
+del *.axf
+del *.bak
+del *.crf
+del *.d
+del *.dep
+del *.fed
+del *.htm
+del *.iex
+del *.lnp
+del *.lst
+del *.map
+del *.o
+del *.plg
+del *.sct
+del *.tra
+del *.txt
+del *._*

@@ -32,8 +32,8 @@ void xRunSend(int32_t l_Nom)
 					CRunStep.AddSub = 1;
 				else
 				{
-					CRunStep.AddSub = 4;
 					CRunStep.gHSpd = g_Active - CUstDef.DnDist - CRunStep.RezStep;  //Вычисление расстояния для перехода на большую скорость
+					CRunStep.AddSub = 4;		//!!! Поиск неправильного переключения на скорость					
 				}
 				PostMessage(0, WM_MOTION, IDC_UP_LO, 0);	//UpLSpd
 			}
@@ -47,8 +47,8 @@ void xRunSend(int32_t l_Nom)
 				CRunStep.AddSub = 0;            //
 			else
 			{
-				CRunStep.AddSub = 5;
 				CRunStep.gHSpd = g_Active + CUstDef.DnDist - CRunStep.RezStep;  //Вычисление расстояния для перехода на большую скорость
+				CRunStep.AddSub = 5;		//!!! Поиск неправильного переключения на скорость				
 			}
 			PostMessage(0, WM_MOTION, IDC_DN_LO, 0);	//DnLSpd
 		}

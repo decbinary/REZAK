@@ -49,6 +49,6 @@
 
 #define IDC_EXT_INTER					1300
 
-#define PASSWORD							(int)36320
+#define PASSWORD							(int)36320 //включается нажатием second key+point в ручном режиме g_Regim = 1
 
 int DlgProc(int hWnd, UINT uMsg, int wParam, int lParam);
